@@ -258,9 +258,10 @@ export default function Tic() {
 				blanks[bestMove].addWithUpdate(Symbol(sym, blanks[bestMove]))
 			}
 			canvas.renderAll()
+			// eslint-disable-next-line
 			turn = !turn
 			setTurn(turn)
-			//console.log(checkWinner(board))
+			console.log(checkWinner(board))
 			let secBoard = getBoard()
 			if (checkWinner(secBoard).row !== null) {
 				showWinner(checkWinner(secBoard).row)
