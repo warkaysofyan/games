@@ -114,11 +114,6 @@ export default function Tic() {
 		player: 'computer',
 		symbol: 'O',
 	})
-	let [huPlayer, sethuPlayer] = useState({
-		player: 'friend',
-		symbol: 'X',
-	})
-	let [X, setX] = useState()
 
 	let checkWinner = arr => {
 		let result = { winner: null, row: null }
@@ -133,7 +128,6 @@ export default function Tic() {
 			[2, 4, 6],
 		]
 
-		//let arr = getBoard()
 		console.log('this tis the arr: ', arr)
 		rows.forEach((el, i) => {
 			if (arr[el[0]] === arr[el[1]] && arr[el[1]] === arr[el[2]]) {
