@@ -1,0 +1,31 @@
+.tic-canv-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+	.centerFlex {
+		//background-color: red;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		:last-child {
+			background-color: #ac87c5;
+			outline: 0;
+			height: 30px;
+			border: 0px;
+			border-radius: 10px;
+		}
+	}
+	.centerFlexLast {
+		justify-content: center;
+		height: 100px;
+		button {
+			height: 50px;
+			width: 120px;
+			font-size: 20px;
+		}
+	}
+}
